@@ -625,7 +625,7 @@ class TranslatableListener extends MappedEventSubscriber
                 }
             }
 
-            if ($translation) {
+            /*if ($translation) {
                 // set the translated field, take value using reflection
                 $content = $ea->getTranslationValue($object, $field);
                 $translation->setContent($content);
@@ -646,7 +646,7 @@ class TranslatableListener extends MappedEventSubscriber
                         }
                     }
                 }
-            }
+            }*/
 
             if ($isInsert && $this->getTranslationInDefaultLocale($oid, $field) !== null) {
                 // We can't rely on object field value which is created in non-default locale.
